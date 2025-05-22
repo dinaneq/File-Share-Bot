@@ -1,11 +1,11 @@
 // ---------- Insert Your Data ---------- //
 
-const BOT_TOKEN = ""; // Insert your bot token.
+const BOT_TOKEN = "7869462803:AAGYnD66f2fpV5R6t6dGNTfBBBTTf1ULJ6k"; // Insert your bot token.
 const BOT_WEBHOOK = "/endpoint"; // Let it be as it is.
-const BOT_SECRET = "BOT_SECRET"; // Insert a powerful secret text.
-const BOT_CHANNEL = ; // Insert your telegram channel id which the bot is admin in.
-const SIA_NUMBER = 1234; // Insert a random integer number and keep it safe.
-const BOT_OWNER = ""; // Not numeric ID, use username for clickable button.
+const BOT_SECRET = "My$tr0ngSecre7K3y"; // Insert a powerful secret text.
+const BOT_CHANNEL = -1002500361166; // Insert your telegram channel id which the bot is admin in.
+const SIA_NUMBER = 912839; // Insert a random integer number and keep it safe.
+const BOT_OWNER = "1129730859"; // Not numeric ID, use username for clickable button.
 // ----------Ohh Bhai Do Not Modify ---------- // 
 
 const WHITE_METHODS = ["GET", "POST", "HEAD"];

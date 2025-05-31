@@ -248,26 +248,20 @@ async function onMessage(event, message) {
     if (message.text === "/start") {
         const ownerButton = {
             inline_keyboard: [
-                [{ text: "📞 Contact Owner", url: `https://t.me/${BOT_OWNER}` }]
+                [{ text: "📞 Pemilik Bot", url: `https://t.me/xinxiaobot` }]
             ]
         };
     
-        const welcomeText = `👋 Hi *${firstName}*, I'm *Zara* from 🇱🇰.\n\nI'm a *file to link generator bot*.\n\n📤 Send me any file, and I'll send you a *download link*.\n\nType /help for more details.\n\n🧑‍💼 Contact owner below if you need help.`;
+        const welcomeText = `👋 Selamat datang *${firstName}*, saya bot *BerbagiBerkas* yang dikembangkan oleh KuyShare.\n\n📤 Unggah atau teruskan berkas atau media, setelah itu bot akan memberikanmu tautan berbagi yang terhubung dengan berkas tersebut.\n\nTekan /bantuan untuk informasi lebih lanjut.\n\n🧑‍💼 Hubungi admin jika kamu ada pertanyaan 👇👇`;
     
         return sendMessageWithButtons(message.chat.id, message.message_id, welcomeText, ownerButton);
     }
 
-    if (message.text === "/help") {
-        const helpText = `📖 *How Zara Works*\n\n` +
-        `📤 *Send me any file* (video, audio, image, document — anything up to *4GB*)\n\n` +
-        `📥 I’ll give you:\n` +
-        `🔗 A *direct download link*\n` +
-        `📺 A *stream link* (for files less than 20MB)\n` +
-        `📬 A *Telegram link* you can share\n\n` +
-        `💡 *No need for your friends to have Telegram!* Just send them the link — they can download or stream the file in their browser, like any normal website.\n\n` +
-        `🌐 *Works like magic*: Upload here ➜ Get a link ➜ Share anywhere.\n\n` +
-        `⚠️ Note: Files above 20MB won’t stream, but can still be downloaded.\n\n` +
-        `Need help? Type /start again or tap “Contact Owner” to reach me.`;
+    if (message.text === "/bantuan") {
+        const helpText = `📖 *Bagaimana cara menggunakannya?*\n\n` +
+        `📤 *Unggah atau teruskan berkas/media* (video, audio, gambar, dokumen — atau apapun hingga *4GB*)\n\n` +
+        `📥 Setelah itu bot akan secara otomatis mengirimkan tautan berbagi:\n` +
+        `Butuh bantuan lain? klik /start dan klik Pemilik Bot`;
     
         return sendMessage(message.chat.id,message.message_id, helpText);
     }

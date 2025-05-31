@@ -308,7 +308,7 @@ async function onMessage(event, message) {
     const final_tele = `https://t.me/${bot.username}/?start=${final_hash}`;
 
     // Create the inline keyboard
-    const inlineKeyboard = {
+    const inlineKeyboard = 
         inline_keyboard: [
             [
                 { text: "Telegram Link", url: final_tele },
@@ -321,8 +321,8 @@ async function onMessage(event, message) {
     };
 
     // Construct the message text
-    let final_text = `*📁 File Name:* \`${fName}\`\n*⚙️ File Hash:* \`${final_hash}\`\n`;
+    let final_text = `*📁 Nama Berkas:* \`${fName}\`\n*⚙️ ID Berkas:* \`${final_hash}\`\n 🔗 Tautan Berbagi: '${final_tele}`\n`;
 
     // Send the message with the inline keyboard
-    return sendMessageWithButtons(message.chat.id, message.message_id, final_text, inlineKeyboard);
+    return sendMessageWithButtons(message.chat.id, message.message_id, final_text);
 }
